@@ -1,0 +1,79 @@
+1: if there are any directories in the folder then move inside any one of them
+
+2: output the full path you are on
+
+3: if there are any directories in the folder then move inside any one of them
+
+4: if there are any directories in the folder then move inside any one of them
+
+5: delete the last folder you created
+
+6: echo 'relative degree terminal sister bay' into the file
+
+7: delete the last folder you created
+
+8: create a file called advantage.txt and immediately delete it
+
+9: delete the last file you created
+
+10: output who the active user is
+
+11: create two directories beat and on and move into on
+
+12: create a file called speculate.txt and immediately delete it
+
+13: output the full path you are on
+
+14: create a file called rain.txt
+
+15: output the content of any file in the directory
+
+16: create a file called recommend.txt. Put the text 'banish banish advantage difficulty plane' in it and copy it so there is also a advice.txt with same content
+
+17: open a file in the terminal and see the content
+
+18: move one level up
+
+19: write something in a file called experienced.txt
+
+20: output the content of any file in the directory
+
+21: move two folders up
+
+22: create a file called pioneer.txt and immediately delete it
+
+23: output who the active user is
+
+24: create a file called shallow.txt
+
+25: create a directory advice and move into the directory
+
+26: move one level up
+
+27: create a file called beat.txt. Put the text 'relative advantage shallow regret pioneer' in it and copy it so there is also a panel.txt with same content
+
+28: create a file called experienced.txt and immediately delete it
+
+29: create a file called pen.txt and immediately delete it
+
+30: output what's in the directory
+
+31: output hidden files
+
+32: move one level up
+
+33: if there are any directories in the folder then move inside any one of them
+
+34: delete the last file you created
+
+35: open a file in the terminal and see the content
+
+36: output what's in the directory
+
+37: echo 'identity relative relative plane banish' into the file
+
+38: delete the last folder you created
+
+39: delete the last file you created
+
+40: create a file called discover.txt
