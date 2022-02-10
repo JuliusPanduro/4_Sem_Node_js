@@ -1,8 +1,8 @@
 //Const is a constant variable and can't be manipulated
 const name = "Julius";
 
-//var is not a constant variable and can be manipulated
-var age = 28;
+//let is not a constant variable and can be manipulated
+let age = 28;
 
 console.log("Name: ",name +" "+ "Age: ",age);
 
