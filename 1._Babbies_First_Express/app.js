@@ -26,6 +26,20 @@ res.send({
 });
 
 
+app.get("/aboutclient/:clientName",(req,res)=>{
+    console.log(req.params.clientName);
+res.send({greeting: `Hello there ${req.params.clientName}`});
+});
+
+
+// write a get route that handles /libaries ... //("/libaries",(req,res) call back function
+//http://localhost:8080/libaries?book1=the_bible&book2=the_koran
+app.get("/libaries",(req,res)=>{
+res.send(req.query);
+});
+
+
+
 app.post("/",(req,res) =>{
     console.log(req.body)
     res.send(req.body);
@@ -42,4 +56,12 @@ app.post("/opinion",(req,res)=>{
 });
 
 
+app.listen(8080, (error)=>{
+    console.log("Server is running on port", 8080);
+});
+
+// how do you send data in a GET request
+// The two ways to send data in a rest api
+// path variables    url: /thisisdynaic
+// query string      url: ?key=value
 
