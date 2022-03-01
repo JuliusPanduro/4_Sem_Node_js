@@ -1,8 +1,11 @@
 const express = require("express");
 const app = express();
-const port = 8080;
 //With express.static("public") i specify which resources my client has access to.
 app.use(express.static("public"));
+
+
+const animalsUtils = require("./animals/animalsUtil.js");
+console.log("The number of favorite animals: ",animalsUtils.calculateFavoriteAnimals());
 
 app.get("/",(req,res) =>{
     res.sendFile(__dirname + "/public/frontpage/frontpage.html");
@@ -14,7 +17,9 @@ app.get("/weather",(req,res) =>{
 });
 
 
-
-app.listen(process.env.PORT || port,()=>{
-    console.log("Server is now running on port:",port);
+const PORT = process.env.PORT || 5000;
+app.listen(PORT,()=>{
+    console.log("Server is now running on port:",PORT);
 });
+
+console.log(PORT);  
