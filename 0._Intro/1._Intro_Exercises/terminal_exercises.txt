@@ -1,34 +1,53 @@
 1: if there are any directories in the folder then move inside any one of them
+cd "folderName"
 
 2: output the full path you are on
+pwd
 
 3: if there are any directories in the folder then move inside any one of them
+cd "foldername"
 
 4: if there are any directories in the folder then move inside any one of them
+cd "foldername"
 
 5: delete the last folder you created
+rm "foldername"
 
 6: echo 'relative degree terminal sister bay' into the file
-
-7: delete the last folder you created
+Set-Content filename 'relative degree terminal sister bay'
 
 8: create a file called advantage.txt and immediately delete it
+New-item advantage.txt
+rm advantage.txt
 
 9: delete the last file you created
+rm "filename"
 
 10: output who the active user is
+$env:UserName
+$env:UserDomain
+$env:ComputerName
 
 11: create two directories beat and on and move into on
+mkdir beat
+mkdir on
+cd on
 
 12: create a file called speculate.txt and immediately delete it
+New-item speculate.txt
+rm speculate.txt
 
 13: output the full path you are on
+pwd
 
 14: create a file called rain.txt
+New-item rain.txt
 
 15: output the content of any file in the directory
+Get-Content filename
 
 16: create a file called recommend.txt. Put the text 'banish banish advantage difficulty plane' in it and copy it so there is also a advice.txt with same content
+
 
 17: open a file in the terminal and see the content
 
