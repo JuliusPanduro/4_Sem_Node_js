@@ -3,9 +3,17 @@ const app = express();
 //With express.static("public") i specify which resources my client has access to.
 app.use(express.static("public"));
 
-
-const animalsUtils = require("./animals/animalsUtil.js");
+/*const animalsUtils = require("./animals/animalsUtil.js");
 console.log("The number of favorite animals: ",animalsUtils.calculateFavoriteAnimals());
+*/
+
+const animalsRouter = (require("./routers/animalsrouter.js"));
+
+app.use(animalsRouter);
+
+
+
+
 
 app.get("/",(req,res) =>{
     res.sendFile(__dirname + "/public/frontpage/frontpage.html");
