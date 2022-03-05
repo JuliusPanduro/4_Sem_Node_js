@@ -1,0 +1,57 @@
+<div class="title"><h1>Api Conventions</h1></div>
+
+<div class="parent">
+   
+
+    <div class="left">
+         <fieldset>
+            <legend>
+                <h3>
+                { KEY }
+                </h3>
+            </legend>
+                <div class="text">
+                    <h3>
+                        Singleton and Collection Resources
+                    </h3>
+                    <h4>
+                        A resource can be a singleton or a collection.
+                    </h4>
+                    <p>
+                       For example: <br> “customers” is a collection resource and “customer” is a singleton resource (in a movie theater domain).
+                    </p>
+                    <p>
+                    We can identify “customers” collection resource using the URI “/customers“. We can identify a single “movie” resource using the URI “/customers/{customerId}“.
+                   </p> 
+
+                   <h3>
+                    Collection and Sub-collection Resources
+                   </h3>
+                   <h4>
+                    A resource may contain sub-collection resources also.
+                   </h4>
+                   <p>
+                    For example:<br>sub-collection resource “tickets” of a particular “customer” can be identified using the URN “/customers/{customerId}/tickets” (in a movie theater domain). 
+                   </p>
+                   <p>
+                    Similarly, a singleton resource “ticket” inside the sub-collection resource “tickets” can be identified as follows: “/customers/{customerId}/tickets/{ticketId}“.
+                   </p>
+                <h5>
+                    Best Practices is to use nouns to represent resources
+                </h5>
+                </div>
+          </fieldset>
+    </div> 
+
+    <div class="right"> 
+        <fieldset>
+            <legend>
+                <h3>
+                { VALUE }
+                </h3>
+            </legend>
+           <img src="../../components/images/Rest Api Design.png">
+        </fieldset>
+      </div>
+</div>
+

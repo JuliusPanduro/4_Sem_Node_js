@@ -1,7 +1,19 @@
 const express = require("express");
 const app = express();
 
+
+
+
+
 app.use(express.json());
+
+
+
+
+
+
+
+
 
 const movies = [
 {id: 1, title: "Harry Potter 1"},
