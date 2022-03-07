@@ -1,0 +1,63 @@
+<div class="title"><h1>Express Get Started</h1></div>
+
+<div class="parent">
+   
+
+    <div class="left">
+         <fieldset>
+            <legend>
+                <h3>
+                { KEY }
+                </h3>
+            </legend>
+            <div class="text">
+                <ol class="literature">
+                    <li>Create a package.json file with the dependencies express.</li>
+                    <li>Install express, and node modules. via. npm</li>
+                    <li>imports express</li>
+                    <li>instanciate express</li>
+                    <li>body parser for make the app parse json.</li>
+                    <li>make express use the static files located in a folder</li>
+                    <li>the endpoint and the callback function (request,response)</li>
+                    <li>imports the routes from the pages router</li>
+                    <li>make express use the routes from the imported pages routes</li>
+                    <li>Set up the port for express, based on either enviroment or a self choosen port</li>
+                </ol>
+                </div>
+          </fieldset>
+    </div> 
+
+    <div class="right"> 
+        <fieldset>
+            <legend>
+                <h3>
+                { VALUE }
+                </h3>
+            </legend>
+            <div class="text">
+                <ol class="literature">
+                    <li>{
+                        "dependencies": {
+                            "express": "4.17.2"
+                        }
+                    }</li>
+                    <li>npm install express</li>
+                    <li>const express = require("express");</li>
+                    <li>const app =  express();</li>
+                    <li>app.use(express.json());</li>
+                    <li>app.use(express.static("public"));</li>
+                    <li>app.get("/",(req,res) =>{
+                        res.send({ message: "Welcome to my server." });
+                    });</li>
+                    <li>const pagesRouter = (require("./public/routers/pagesrouter.js"));</li>
+                    <li>app.use(pagesRouter);</li>
+                    <li>const PORT = process.env.PORT || 3000;
+                        app.listen(PORT, () =>{
+                            console.log("Server is running on port:",PORT);
+                        });</li>
+                </ol>
+                </div>
+        </fieldset>
+      </div>
+</div>
+

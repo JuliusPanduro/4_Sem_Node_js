@@ -19,6 +19,12 @@ router.get("/terminal",(req,res)=>{
 res.send(terminalpageCompleted);
 });
 
+router.get("/code",(req,res)=>{
+    const codepage = fs.readFileSync("./public/pages/code/code.html").toString();
+    const codepageCompleted = nav.replace("%%TITLE_PLACEHOLDER%%","Code Express")+ codepage + footer;
+    res.send(codepageCompleted);
+});
+
 router.get("/literature",(req,res)=>{
     const literaturepage = fs.readFileSync("./public/pages/literature/literature.html").toString();
     const literaturepageCompleted = nav.replace("%%TITLE_PLACEHOLDER%%","Literature List")+ literaturepage + footer;
