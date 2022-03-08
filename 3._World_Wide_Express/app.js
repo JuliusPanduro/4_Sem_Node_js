@@ -1,3 +1,4 @@
+const { response } = require("express");
 const express = require("express");
 const app = express();
 //With express.static("public") i specify which resources my client has access to.
@@ -7,8 +8,28 @@ app.use(express.static("public"));
 console.log("The number of favorite animals: ",animalsUtils.calculateFavoriteAnimals());
 */
 
-const animalsRouter = (require("./routers/animalsrouter.js"));
 
+const fetch = require("node-fetch");
+
+//With async
+app.get("/proxy", async (req,res)=>{
+    const response = await fetch("https://google.com")
+    const website = await response.text();
+res.send(website);
+});
+
+//without async
+/*app.get("/proxy",(req,res)=>{
+    fetch("https://google.com")
+    .then(response => response.text())
+    .then(result => res.send(result));
+});
+*/
+
+
+
+
+const animalsRouter = (require("./routers/animalsrouter.js"));
 app.use(animalsRouter);
 
 
