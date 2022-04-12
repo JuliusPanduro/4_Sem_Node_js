@@ -1,23 +1,10 @@
 <script>
 	export let name;
-
-import Apple from "./pages/Tree/Apple.svelte";
-import Profile from "./pages/Profile/Profile.svelte";
-import Tree from "./pages/Tree/Tree.svelte";
-import Dog from "./pages/Dog/Dog.svelte";
-
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
-	
-<!--<Dog/>
-
-	<Profile name = {name}/>
-	<Profile name = {"name written in App.js"}/>
-	
--->	
-<Tree/>
+	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 </main>
 
 <style>

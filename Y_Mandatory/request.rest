@@ -1,0 +1,30 @@
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjp7InVzZXJuYW1lIjoiSnVsaXVzIiwicGFzc3dvcmQiOiIkMmIkMTAkSE5uRGFqbTJxVVd4U2hmOFhoQWVsdXdFM2VWTGFDVG9rNi8zNWJadEJuZFBvemppT0l1ZDYifSwiaWF0IjoxNjQ5NzA3MTQxfQ.1fwczQ750E-XsME6BJ9pN2SzrNZyNpzqvDRYEti96gk
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "username" : "Julius",
+    "password" : "password"
+}
+
+###
+
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "username" : "Julius",
+    "password" : "password"
+}
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username" : "Julius"
+}

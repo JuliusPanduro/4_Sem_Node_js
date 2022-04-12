@@ -1,0 +1,19 @@
+Mongo db is a documented database, and operates with json and can save javascript objects into the db.
+we dont have relations in mongo db, but we have seperated entities (called: collections)
+
+collections(mongodb) <----> Tables(SQL)
+
+
+relations (mongodb are not so good at relations, because there is no fixed mode to make relations)
+
+
+//frankenstein
+some companies are using SQL for buisness logic, and mongodb for logging
+
+jsonSchema vs. odm
+
+
+C - insert = example:  db.actors.insert({ name: "Danny Devito" })
+R - find = example: db.actors.find({}) or if you looking for some specific: db.actors.find({ name: "Danny" })
+U - update = example: db.actors.update({"Where"},{"with"}) / db.actors.update({id:1},{$set:{ wife:{ nice: true}}})
+D - deleteOne / deleteMany / remove = example db.actors.deleteOne({ name: "Danny Devito" }) will delete one and db.actors.remove({}) removes all
