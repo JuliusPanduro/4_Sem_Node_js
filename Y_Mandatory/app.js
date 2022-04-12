@@ -7,6 +7,12 @@ const jwt = require('jsonwebtoken')
 
 app.use(express.json());
 
+// Import Routes
+const authRoute = require('./routes/auth');
+
+// Route Middlewares
+app.use('/api/users', authRoute);
+
 const posts = [{
     username: 'Julius',
     title: 'post 1'

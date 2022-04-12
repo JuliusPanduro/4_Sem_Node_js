@@ -1,9 +1,10 @@
 const express = require("express");
 const app = express();
-app.use(express.static("public"));
 
-const pagesRouter = (require("./routers/pagesrouter.js"));
-app.use(pagesRouter);
+
+app.get('/',(req,res)=>{
+    res.send('Hello World');
+})
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () =>{
