@@ -7,10 +7,10 @@ exports.register = async (req, res) => {
 
     // Create an user object
     const user = new User({
-        mobile: req.body.mobile,
-        email: req.body.email,
-        name: req.body.name,
+        username: req.body.username,
         password: hasPassword,
+        name: req.body.name,
+        email: req.body.email,  
         status: req.body.status || 1
     });
     // Save User in the database

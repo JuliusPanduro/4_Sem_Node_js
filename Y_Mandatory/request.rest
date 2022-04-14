@@ -1,5 +1,5 @@
 GET http://localhost:3000/users
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjp7InVzZXJuYW1lIjoiSnVsaXVzIiwicGFzc3dvcmQiOiIkMmIkMTAkSE5uRGFqbTJxVVd4U2hmOFhoQWVsdXdFM2VWTGFDVG9rNi8zNWJadEJuZFBvemppT0l1ZDYifSwiaWF0IjoxNjQ5NzA3MTQxfQ.1fwczQ750E-XsME6BJ9pN2SzrNZyNpzqvDRYEti96gk
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjp7InVzZXJuYW1lIjoiSnVsaXVzIiwicGFzc3dvcmQiOiIkMmIkMTAkYm52OUhFWjAxZC5tRHF1bXhkSGFxdTg4ZUlGMVNRSkthb2V3TktEMWJPdWFRbTRUb2twUS4ifSwiaWF0IjoxNjQ5ODc1NTIwfQ.b6WaAO-urN2_p88QyFw4A4HJvz6ZwYRtTP8ooKjNBpw
 
 ###
 
@@ -7,7 +7,7 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-    "username" : "Julius",
+    "username" : "Peter",
     "password" : "password"
 }
 
@@ -17,7 +17,7 @@ POST http://localhost:3000/users/login
 Content-Type: application/json
 
 {
-    "username" : "Julius",
+    "username" : "Peter",
     "password" : "password"
 }
 
