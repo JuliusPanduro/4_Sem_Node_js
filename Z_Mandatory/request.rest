@@ -1,0 +1,27 @@
+GET http://localhost:3000/hello
+
+
+###
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjVjNzZiNGJmNjNiNmJkMDc0NzRjNDYiLCJlbWFpbCI6InRlc3RAdGVzdC5kayIsInBhc3N3b3JkIjoiJDJiJDEwJDBZMDBHR3dJSzFrMVlxblYuRE5DZ095a3NWUVFrYnBuR0FSVUd1ZjlRUUNtemNoWVQyZ2kuIiwibmFtZSI6InRlc3QiLCJpYXQiOjE2NTAzMDcyMTJ9.SgcTDqtJbesQSfYFy6jjgeur8bRpqtQOZQgiI3Dr3H4
+
+###
+
+POST http://localhost:3000/signup
+Content-Type: application/json
+
+{
+    "email" : "test@test.dk",
+    "password" : "test",
+    "name": "test"
+}
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email" : "test@test.dk",
+    "password" : "test"
+}

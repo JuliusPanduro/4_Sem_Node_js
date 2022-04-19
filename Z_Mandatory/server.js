@@ -1,10 +1,17 @@
-const express = require("express");
+import express from 'express';
 const app = express();
 
+app.use(express.json());
 
-app.get('/',(req,res)=>{
-    res.send('Hello World');
-})
+import cors from "cors";
+app.use(cors());
+
+import helmet from "helmet";
+app.use(helmet());
+
+import router from "./server/routers/userRouter.js";
+app.use(router);
+
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () =>{
