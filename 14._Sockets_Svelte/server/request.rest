@@ -1,0 +1,9 @@
+POST http://localhost:3000/api/registeruser 
+#content-type: application/json
+
+{
+    "username": "sample"
+}
+
+###
+
